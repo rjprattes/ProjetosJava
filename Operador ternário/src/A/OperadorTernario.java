@@ -9,7 +9,7 @@ public class OperadorTernario {
 		System.out.print("Digite sua idade: ");
 		int idade = entrada.nextInt();
 		
-		String indicacao = (idade >= 18) ? "Adulto" : "Criança";
+		String indicacao = (idade >= 18) ? "Adulto" :  (idade <= 12) ? "Criança" : "Adolescente";
 			
 		System.out.println("Resultado: " + indicacao);
 	}
